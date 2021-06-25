@@ -1,0 +1,17 @@
+<section class="todoapp">
+  <div class="row">
+    <app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
+  </div>
+
+  <div class="row">
+    <app-todo-list
+      [todos]="todos"
+      (toggleComplete)="onToggleTodoComplete($event)"
+      (remove)="onRemoveTodo($event)">
+    </app-todo-list>
+  </div>
+
+  <div class="row">
+    <app-todo-list-footer [todos]="todos"></app-todo-list-footer>
+  </div>
+</section>

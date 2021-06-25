@@ -1,0 +1,11 @@
+{
+  "/rest": {
+    "target": "http://localhost:8080/rest/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "error",
+    "pathRewrite": {
+      "^/rest": ""
+    }
+  }
+}

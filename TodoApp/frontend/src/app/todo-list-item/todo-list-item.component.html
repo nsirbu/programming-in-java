@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-2 d-flex justify-content-center align-items-center">
+    <input type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.completed">
+  </div>
+  <div class="col-9">
+    <label style="margin-left: 0">{{todo.title}}</label>
+  </div>
+  <div class="col-1 d-flex justify-content-center align-items-center">
+    <button class="destroy" (click)="removeTodo(todo)"></button>
+  </div>
+</div>
